@@ -13,6 +13,13 @@ npm ci
 npm run dev
 ```
 
+Startet den lokalen Webserver unter http://localhost:5173 und öffnet die App
+automatisch im Browser. Änderungen an HTML, JavaScript und CSS werden automatisch
+übernommen. Tailwind läuft parallel im Watch-Modus. Mit `Strg+C` beendest du beide
+Prozesse. Ist Port 5173 bereits belegt, beende zuerst den dort laufenden Server.
+
+Falls PowerShell `npm.ps1` blockiert, verwende `npm.cmd run dev` (bzw. `npm.cmd ci`).
+
 ## Build und Veröffentlichung
 
 ```sh
