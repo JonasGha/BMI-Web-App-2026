@@ -7,8 +7,8 @@
   },
   "scripts": {
     "dev": "npm run build && concurrently --kill-others --names css,web \"npm run dev:css\" \"npm run dev:web\"",
-    "dev:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "dev:web": "vite src --host localhost --port 5173 --strictPort --open",
-    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify"
+    "dev:css": "tailwindcss -i ./src/input.css -o ./public/css/styles.min.css --minify --watch",
+    "dev:web": "vite --host localhost --port 5173 --strictPort --open /src/index/index.html",
+    "build": "tailwindcss -i ./src/input.css -o ./public/css/styles.min.css --minify"
   }
 }
